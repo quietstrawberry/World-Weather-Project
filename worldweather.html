@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        </br>
+        </br>
+        <form id="search-city">
+            <input id="city-input" type="text" placeholder="Enter your city" ? /> <input type="submit" value="Go" />
+        </form>
+        <h1 id="city">Chicago</h1>
+        <span id="temperature">28</span> <a id="fahrenheit-link" href="#">°F</a>|
+        <a id="celcius-link" href="#">°C</a>
+
+
+
+        <ul>
+            <li><span id="description">Partly Cloudy</span></li>
+            <li>Humidity: <span id="humidity">33</span>% </li>
+            <li>Wind: <span id="wind">5</span> km/h</li>
+        </ul>
+
+        </br>
+        </br>
+
+
+        <h2>Date and Time</h2>
+
+        <div class="row">
+
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">32°</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">30°</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">38°</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">42°</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">40°</div>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">Tuesday 💨</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">Wednesday 🌦</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">Thursday ☁</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">Friday ⛅</div>
+                </div>
+                </br>
+                <div class="card">
+                    <div class="card-body">Saturday ☁</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <h2>32° Tuesday 💨</h2>
+	<h2>30° Wednesday 🌦</h2>
+	<h2>38° Thursday ☁</h2>
+	<h2>42° Friday ⛅</h2>
+	<h2>40° Saturday ☁</h2>
+-->
+    </div>
+    <div id="app"></div>
+
+    <script src="weather.js"></script>
+
+    <!--<script src="src/index.js">-->
+    </script>
+</body>
+
+</html>
