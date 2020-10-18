@@ -19,26 +19,24 @@
 </head>
 
 <body>
-    <a href="https://github.com/quietstrawberry/World-Weather-Project">My GitHub</a>
+    
     <div class="container">
         
         <form id="search-city">
             <input id="city-input" type="text" placeholder="Enter your city" ? /> <input type="submit" value="Go" />
         </form>
         <h1 id="city">Chicago</h1>
-        <span id="temperature">28</span> <a id="fahrenheit-link" href="#">°F</a>|
+        <span ><h3 id="temperature">28</h3></span> <a id="fahrenheit-link" href="#">°F</a>|
         <a id="celcius-link" href="#">°C</a>
 
 
 
-        <ul>
-            <li><span id="description">Partly Cloudy</span></li>
+        <ul class="weather-info">
+            <li><span id="description" >Partly Cloudy</span></li>
             <li>Humidity: <span id="humidity">33</span>% </li>
             <li>Wind: <span id="wind">5</span> km/h</li>
         </ul>
-
-        </br>
-        </br>
+        
 
 
         <h2>Date and Time</h2>
@@ -100,6 +98,8 @@
     </div>
     
     <div id="app"></div>
+</br>
+    <a class="github" href="https://github.com/quietstrawberry/World-Weather-Project"> My GitHub</a>
 
     <script src="worldweather.js"></script>
 
