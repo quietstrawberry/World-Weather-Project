@@ -1,3 +1,22 @@
+
+function loadDisplayTemperature(response){
+  let loadTemperature=document.querySelector("#temperature");
+  loadTemperature.innerHTML=Math.round(response.data.main.temp);
+  let loadDescription=document.querySelector("#description");
+  loadDescription.innerHTML=(response.data.weather[0].description);
+  let loadHumidity=document.querySelector("#humidity");
+  loadHumidity.innerHTML=Math.round(response.data.main.humidity);
+  let loadWind=document.querySelector("#wind");
+  loadWind.innerHTML=Math.round(response.data.wind.speed);
+ 
+  
+
+}
+
+let apiKey = "04e33782c3a1504fe52423621fcf24dd";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(loadDisplayTemperature);
+
 let now = new Date();
 
 let h2 = document.querySelector("h2");
