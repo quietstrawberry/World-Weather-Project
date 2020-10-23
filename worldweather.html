@@ -25,26 +25,47 @@
         <form id="search-city">
             <input id="city-input" type="text" placeholder="Enter your city" ? /> <input type="submit" value="Go" />
         </form>
-        
-      <div class="new-city">
-        <h1 id="city" >Chicago</h1>
-        <div class="tempUnit"><span  id="temperature" >28 </span>  <span class="unitConversion">°C|<a id="fahrenheit-link" href="#">°F</a></span>
+
+      <div class="row">
+
+        <div class="col-3"></div>
+        <div class="col-3">
+            <h1 id="city" >Chicago</h1>
+            <h2>Date and Time</h2>
         </div>
+        <div class="col-3">
+            <div class="temperature"><span id="temperature">28 </span> <span class="unitConversion">°C|<a id="fahrenheit-link"
+                        href="#">°F</a></span>
+            </div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png">
 
-
-
-        <ul class="weather-info">
-            <li><span id="description" >Partly Cloudy</span></li>
-            <li>Humidity: <span id="humidity">33</span>% </li>
-            <li>Wind: <span id="wind">5</span> km/h</li>
-        </ul>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    </br>
+</br>
+        
         
 
 
-        <h2>Date and Time</h2>
-      </div>
+     <div class="row">
+         <div class="col-1"></div>
+         
+         <div class="col-9">
 
-        <div class="row">
+         <h4><span id="description">Partly Cloudy </span> | Humidity: <span id="humidity">33</span>%  | Wind: <span id="wind">5</span> km/h</h4>
+        </div>
+        
+        </div>
+    
+
+    </br>
+    
+
+      
+    </div>
+
+        <div class="row" class="forecast">
             <div class="col-2"></div>
 
             <div class="col-2">
