@@ -1,41 +1,14 @@
 body {
-  font-family: sans-serif;
-}
-h1 {
-  text-align: center;
-}
-
-h2 {
-  display: block;
-  margin: 0, auto;
-  text-align: center;
-}
-.forecast {
-  display: block;
-  position: relative;
-  text-align: center;
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  background: linear-gradient(
-    90deg,
-    rgba(198, 195, 255, 1) 0%,
-    rgba(181, 194, 255, 0.865983893557423) 50%,
-    rgba(193, 227, 255, 1) 100%
+  background-image: url("https://www.lefthudson.com/wp-content/uploads/2019/11/clouds-wallpaper-hd-luxury-the-clouds-wallpaper-for-you-of-clouds-wallpaper-hd.jpg");
+  background-repeat:none;
   );
 }
-.text {
-  position: fixed;
-  top: 20px;
-  left: 15px;
-}
-body {
-  background: linear-gradient(
-    90deg,
-    rgba(126, 118, 255, 1) 0%,
-    rgba(65, 145, 255, 0.865983893557423) 50%,
-    rgba(140, 214, 255, 1) 100%
-  );
+.card {
+  all:unset;
+  min-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background:none;
 }
 
 .github {
@@ -43,42 +16,32 @@ body {
   bottom: 0px;
   display: block;
 }
-h3 {
-  position: relative;
-  text-align: center;
-  display: block;
-  margin: 0, auto;
-  padding-top: 0;
-}
 
 .temperature {
-  text-align: left;
-  font-size: 24px;
 }
-.tempUnit {
-  text-align: center;
-  display: block;
-  margin: 0, auto;
+.icon {
+  display: inline-block;
+  min-width: 80px;
+}
+h5 {
   font-size: 36px;
-  min-width: 250px;
 }
-.unitConversion {
-  font-size: 24px;
+h2 {
+  padding-left: 30px;
+  padding-top: -30px;
+}
+.card-title {
+  display: inline-block;
+  min-width: 80px;
+}
+.units {
+  font-size: 20px;
+  display: inline-block;
 }
 form {
-  padding-top: 50px;
+  padding-top: 20px;
 }
-h4 {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  font-size: 16px;
-  padding: 0;
+img{
+  min-height:60px;
 }
-span {
-  position: relative;
-}
-.img {
-  padding-left: 60px;
-  position: relative;
-}
+  

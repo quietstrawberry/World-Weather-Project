@@ -2,12 +2,16 @@
 function loadDisplayTemperature(response){
   let loadTemperature=document.querySelector("#temperature");
   loadTemperature.innerHTML=Math.round(response.data.main.temp);
+
   let loadDescription=document.querySelector("#description");
   loadDescription.innerHTML=(response.data.weather[0].description);
+
   let loadHumidity=document.querySelector("#humidity");
   loadHumidity.innerHTML=Math.round(response.data.main.humidity);
+
   let loadWind=document.querySelector("#wind");
   loadWind.innerHTML=Math.round(response.data.wind.speed);
+
   let loadIcon=document.querySelector("#icon");
   loadIcon.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
  
@@ -49,6 +53,8 @@ function getWeatherCondition(response) {
   document.querySelector("#icon").setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+
+
 function search(event) {
   event.preventDefault();
 
@@ -66,6 +72,8 @@ function search(event) {
   //cityElement.innerHTML = cityInput.value;
   //make an api call to open weather
   //display entered city and weather
+
+ 
 }
 
 let searchForm = document.querySelector("#search-city");
@@ -106,7 +114,23 @@ function handleSubmit(event) {
     let city = document.querySelector("#city-input").value;
     let apiKey = "04e33782c3a1504fe52423621fcf24dd";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    console.log(apiUrl);
     axios.get(apiUrl).then(showWeather);
+
+
   }
+
+ //function showForecast(response){
+   //let forecastElement=document.querySelector("#forecast");
+  // let forecast=response.data.list[0];
+
+  // forecastElement.innerHTML=` <div class="card-body" id="forecast"> 12:00  ${forecast.main.temp_max}° <img src="#"></div>`
+
+
+ //}
+//function getForecast(event){
+  //let city=document.querySelector("city-input").value;
+  //let apiKey="04e33782c3a1504fe52423621fcf24dd"
+  //let apiUrl=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units==metirc`;
+//axios.get(apiUrl)then(showForecast);
+//}
 }
