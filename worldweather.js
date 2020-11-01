@@ -14,6 +14,8 @@ function loadDisplayTemperature(response){
 
   let loadIcon=document.querySelector("#icon");
   loadIcon.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  celciusTemperature=(response.data.main.temp);
  
   
 
@@ -51,8 +53,11 @@ function getWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#icon").setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  celciusTemperature=response.data.main.temp;
 }
 
+let celciusTemperature=null;
 
 
 function search(event) {
@@ -82,9 +87,10 @@ searchForm.addEventListener("submit", search);
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
+  let temperature = celciusTemperature;
   temperature = Number(temperature);
   temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+ 
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -93,9 +99,8 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 function convertToCelcius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperature = Number(temperature);
-  temperatureElement.innerHTML = Math.round(((temperature - 32) * 5) / 9);
+ temperatureElement.innerHTML=Math.round(celciusTemperature);
+  
 }
 
 let celciusLink = document.querySelector("#celcius-link");
